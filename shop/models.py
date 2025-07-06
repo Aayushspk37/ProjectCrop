@@ -27,7 +27,6 @@ class contact(models.Model):
     
 class crop_recommend(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
     recommend_id=models.AutoField(primary_key=True)
     nitrogen = models.FloatField(default=0.0)
     phosphorus = models.FloatField(default=0.0)

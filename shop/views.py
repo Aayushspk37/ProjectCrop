@@ -33,7 +33,7 @@ def user_contact(request):
         email=request.POST.get('email','')
         phone=request.POST.get('phone','')
         desc=request.POST.get('desc','')
-        # print(name,email,phone,desc)
+        
         ncontact=contact(name=name,email=email,phone=phone,desc=desc)
         ncontact.save()
     return render(request,'shop/contactus.html')
