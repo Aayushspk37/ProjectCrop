@@ -1,6 +1,6 @@
 import os
 from django.core.files import File
-from cropapp.models import CropDetail
+from shop.models import CropDetail
 
 BASE_IMAGE_PATH = 'media/crop_images/'
 
